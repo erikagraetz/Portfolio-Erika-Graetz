@@ -23,10 +23,11 @@
 
 <body>
   <header>
-    <div>
-      <a href="index.html" class="my-logo" id="my-logo">erika.graetz</a>
+  <div class="container">
+    <div class="logo">
+      <a href="index.html" class="logo" id="logo">erika.graetz</a>
       <nav>
-        <ul>
+      <ul class="navigation">
           <li><a href="index.html">Work</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="#contact">Contact</a></li>
@@ -34,21 +35,23 @@
       </nav>
     </div>
   </header>
-  <div>
-    <div>
+
+  <main>
+    <div id="hero">
+  <div class="container">
       <h1>Hey, I’m Erika, a UX / UI and Graphic Designer based in Berlin.</h1>
       <p>
         My motivation is to meaningfully improve people’s lives by creating simple, pleasant and easy-to-use products.
       </p>
     </div>
   </div>
-  <div>
+  <div id="projects">
+<div class="container">
     <!-- NOTE: opening of project section -->
     <h2>
       My projects
     </h2>
-    <div>
-      <div>
+   <div class="row">
         <!-- NOTE: opening Project 1 Xpertease  -->
         <picture>
             <a href="xpertease.html">
@@ -65,15 +68,14 @@
         <a href="xpertease.html" class="button">Read more</a>
       </div> <!-- NOTE: closing Project 1 Xpertease -->
     </div>
-    <div>
+    <div class="container">
       <!-- NOTE: opening Poject 2 Wordtray -->
-      <div>
-        <picture>
+            <picture>
           <source srcset="http://via.placeholder.com/600x400" media="(max-width:767px)">
           <img src="http://via.placeholder.com/800x600" alt="Wordtray image">
         </picture>
       </div>
-      <div>
+  <div class="container">
         <h3>Wordtray | UX Case Study)</h3>
         <p>
           A mobile App that helps people learn vocabulary in an easy way,practicing with flashcards, anytime & anywhere.
@@ -83,14 +85,15 @@
     </div>
   </div> <!-- NOTE: closing Project Section -->
   <div>
+  </main>
     <footer>
 
-      <div>
+    <div class="container">
         <!-- NOTE: opening Footer Section -->
-        <div>
+        <div id="footer">
           <h2>Get in Touch!</h2>
         </div>
-        <div>
+          <div class="row">
           <!-- NOTE: Email "button" -->
           <a href="mailto:erika.graetz@gmail.com" class="button contact">Send me an Email</a>
         </div>
@@ -102,7 +105,7 @@
           <a href="tel:+4915774772844">Give me a call!</a>
         </div>
 
-        <div>
+        <div id="socialmedia">
           <!--Social Media Layout and Placeholders-->
           <a href="https://www.linkedin.com/in/erika-graetz/" target="_blank">
             <svg height="100%" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" version="1.1" viewBox="0 0 512 512" width="100%" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
@@ -120,7 +123,9 @@
           </a>
         </div>
       </div>
+    <div class="container">
       <p>Copyright Erika Graetz 2021</p>
+    </div>
     </footer>
 
 </body>
