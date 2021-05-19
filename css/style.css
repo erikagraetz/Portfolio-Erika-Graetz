@@ -28,20 +28,19 @@ header {
   line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
   padding: 10px 0;
   color: #0b0b0b;
-width: 100%;
-  box-shadow:
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
   -webkit-box-shadow: 0px 2px 2px 0px rgba(50, 50, 50, 0.3);
--moz-box-shadow:    0px 2px 2px 0px rgba(50, 50, 50, 0.3);
-box-shadow:         0px 2px 2px 0px rgba(50, 50, 50, 0.3);
-position: fixed;
+  -moz-box-shadow:    0px 2px 2px 0px rgba(50, 50, 50, 0.3);
+  box-shadow:         0px 2px 2px 0px rgba(50, 50, 50, 0.3);
+  position: fixed;
   }
 
 
 nav {
   display: inline-block;
-  width: 100%;
-
-  }
+}
 
   nav > ul {
     list-style-type: none;
