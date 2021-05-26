@@ -85,7 +85,7 @@ color: #0b0b0b;
 }
 
 h1, h2, h3, h4 {
-  line-height: 1.3;
+  line-height: 1.4;
 }
 
 h1 {
@@ -134,48 +134,7 @@ p {
   }
 
 
- /* Read more Buttons */
-  .button {
-    display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block */
-    background-color: #0b0b0b;
-    color: #ffffff;
-    text-transform: none;
-    max-width:150px;
-    max-height:40px;
-    padding-left: 16px;
-    padding-right: 16px;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    border-radius: 40px;
-    font-family: "Poppins", sans-serif;
-    font-size: 0.9em;
-    line-height:1.3;
-    text-align: center;
-    vertical-align: middle;
-    text-decoration: none;
-    font-weight: 300;
-    margin-top: 12px;
-    margin-bottom: 20px;
-    margin-left: 0px;
-    border-bottom: 1px solid #0b0b0b; /* width of the border, type, color */
-    transition: 0.2s opacity;
-  }
 
-
-  .button:hover {
-    background-color: #ffffff;
-    border: 1px solid #0b0b0b;
-    color: #0b0b0b;
-    text-decoration: none;
-  }
-
-
-    .button:active {
-      background-color: #ffffff;
-      border: 1px solid #0b0b0b;
-      color: #0b0b0b;
-      text-decoration: none;
-    }
 
 .getintouch{
   background-color: #f1f1f1;
@@ -282,52 +241,131 @@ p {
            text-decoration: none;
          }
 
-.work-section h2{
-  text-align: center;
-  padding-top: 30%;
-  padding-bottom: 5%
-  padding-left: 5%;
-  padding-right: 5%;
+
+/********** Projects **********/
+
+.round-borders{
+    border-radius: 10px 10px 0 0;
 }
 
+.work-wrapper {
+    align-items: center;
+    background-color: #f8f8f8;
+    padding-bottom: 5%;
+    width: 100%;
+}
 
-
-    .project-box {
+.projects-box{
     display: flex;
     flex-direction: row;
-    flex-flow: row wrap;
-    justify-content: space-around;
-    align-content: flex-end;
+    flex-flow: wrap;
+    justify-content: center;
+    align-content: flex-start;
+    align-items: flex-start;
     width: 100%;
-    padding-top: 2%;
+    padding-top: 1%;
     padding-bottom: 5%;
     padding-left: 2%;
     padding-right: 2%;
+    transform: translate(0,-4px);
     cursor: pointer;
 }
 
-      .projects {
-      display: flex;
-      flex-direction: column;
-      align-content: space-between;
-      background-color: white;
-      color: #0b0b0b;
-      border-radius: 10px;
-      margin: 1%;
-      width: 30%;
-      min-width: 300px;
-  }
-
-.white-background{
-  border-radius: 4px;
-    border: 1px solid #0b0b0b; /* width of the border, type, color */
+.project{
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    background-color: white;
+    color: #0b0b0b;
+    border-radius: 10px;
+    margin: 1%;
+    width:30%;
+    min-width: 200px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+    min-height: 550px;
 }
+
+.project:hover img{
+    transform: translate(0,-5px);
+    opacity: 0.8;
+    transition: transform 0.5s;
+}
+
+.project-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 24px;
+    margin-left: 24px;
+    margin-right: 24px;
+    min-height: 200px;
+}
+
+.project-content h3{
+    margin-top: 8px;
+    margin-bottom: 0px;
+}
+
+.project-content p{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+
+
+/* Read more Buttons */
+ .button {
+   background-color: #0b0b0b;
+   color: #ffffff;
+   text-transform: none;
+   max-width:200px;
+   max-height:40px;
+   padding-left: 16px;
+   padding-right: 16px;
+   padding-top: 8px;
+   padding-bottom: 8px;
+   border-radius: 40px;
+   font-family: "Poppins", sans-serif;
+   font-size: 0.9em;
+   line-height:1.3;
+   text-align: center;
+   vertical-align: middle;
+   text-decoration: none;
+   font-weight: 300;
+   margin-top: 12px;
+   margin-bottom: 24px;
+   border-bottom: 1px solid #0b0b0b; /* width of the border, type, color */
+   transition: 0.2s opacity;
+ }
+
+
+ .button:hover {
+   background-color: #ffffff;
+   border: 1px solid #0b0b0b;
+   color: #0b0b0b;
+   text-decoration: none;
+ }
+
+
+   .button:active {
+     background-color: #ffffff;
+     border: 1px solid #0b0b0b;
+     color: #0b0b0b;
+     text-decoration: none;
+   }
+
+
+
 
 /* Layout styling */
 
 .container {
   padding: 0 15px;
 }
+
+/********** Home Hero **********/
 
 #hero h1 {
   background-color: #ffffff;
@@ -351,7 +389,7 @@ p {
   width: 100%;
   }
 
-  .contact-button-row {
+.contact-button-row {
 display: flex;
 flex-direction: row;
 flex-wrap: wrap;
@@ -373,14 +411,7 @@ flex-basis: 50%;
   cursor: pointer;
   }
 
-  .kktfwp-logo-menu-wrapper .kktfwp-mobile span {
-      width: 12px;
-      height: 2px;
-      display: block;
-      position: absolute;
-      background-color: currentColor;
-      transition: background-color .15s linear;
-      top: 50%;
+
 
 
 
@@ -388,11 +419,7 @@ flex-basis: 50%;
   Medium devices (640px and larger)
   ================================= */
   @media only screen and (min-width: 640px) {
-
-.col-md-6 {
-    width: 50%;
-  }
-
+    .
   }
 
 
