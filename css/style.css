@@ -464,6 +464,8 @@ p {
 
 .intro-home h1 {
   background-color: #ffffff;
+  font-size: 1.95em;
+  letter-spacing: 0.03em;
   padding-top: 0px;
   margin-bottom: 0px;
   display: flex;
@@ -654,6 +656,24 @@ justify-content: center;
     text-align: left;
     padding-left: 24px;
 }
+
+.intro-home h1 {
+  font-size: 1.7em;
+  letter-spacing: 0.03em;
+  text-align: center;
+  width: 100%;
+}
+
+.intro-home p {
+  font-size: 1.0em;
+  font-weight: 300;
+  text-align: center;
+}
+
+.home-button-row {
+justify-content: center;
+  }
+
 
 }
 
