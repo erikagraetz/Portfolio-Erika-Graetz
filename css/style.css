@@ -457,7 +457,7 @@ flex-basis: 50%;
 .hero-about {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content:center;
     align-items: center;
     flex-direction: row;
     margin: 1%;
@@ -481,9 +481,9 @@ flex-basis: 50%;
 
 
 .description {
-    flex-basis: 50%;
+    flex-basis: 60%;
     text-align: left;
-    max-width: 600px;
+    max-width: 700px;
     min-width: 320px;
     padding-right: 5%;
     padding-left: 5%;
@@ -552,7 +552,37 @@ Small devices // Smaller than iPad (768px and smaller)
         min-height: 320px;
     }
 
+    .hero-image {
+           display: none;
+       }
 
+.description h1 {
+  font-size: 1.4em;
+  font-weight: 700;
+  text-align: center;
+}
+
+.description p {
+  font-size: 0.9em;
+  font-weight: 300;
+  text-align: center;
+}
+
+.about-button-row {
+justify-content: center;
+  }
+
+.hero-about h3 {
+    font-size: 1.2em;
+    text-align: left;
+    padding-left: 24px;
+}
+
+.skills-tools {
+    font-size: 0.9em;
+    text-align: left;
+    padding-left: 24px;
+}
 
 }
 
