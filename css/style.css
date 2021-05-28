@@ -3,8 +3,7 @@ Colors used:
 Primary Color (White): #0b0b0b;
 Secondary Color (Black): #ffffff;
 Third Color (dark grey): #282828
-Highlight Color 1 (yellow) #faf077;
-Highlight Color 2 (lightblue) #6fc9e2;
+Highlight Color 2 (lightblue) #0057ff;
 */
 
 img {
@@ -143,13 +142,13 @@ p {
       }
   }
 
-  .pic-animation:hover{
+  .hero-image-animation:hover{
       transform: translate(0, -5px);
       transition: ease-in 0.5s;
       transform: rotate(1deg);
   }
 
-  .pic-animation {
+  .hero-image-animation {
       transform: translate(0, -5px);
       transition: ease-out 0.5s;
 
@@ -202,7 +201,6 @@ p {
        vertical-align: middle;
        text-decoration: none;
        font-weight: 300;
-       margin: 12px;
        border: 1px solid #0b0b0b; /* width of the border, type, color */
        transition: 0.2s opacity;
      }
@@ -409,20 +407,42 @@ p {
 
 /********** Home Hero **********/
 
-.hero{
+.hero-home{
   padding-bottom: 10%;
+    display: flex;
+    flex-direction: row;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    height: 100vh;
+    padding-bottom: 5%;
+    padding-top: 5%;
 }
 
-#hero h1 {
+
+.intro-home {
+    flex-basis: 60%;
+    text-align: left;
+    max-width: 600px;
+    min-width: 320px;
+    padding-right: 5%;
+    padding-left: 5%;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+
+.intro-home h1 {
   background-color: #ffffff;
-  padding-top: 50px;
+  padding-top: 0px;
   margin-bottom: 0px;
-  display: inline-block;
-  text-align: center;
+  display: flex;
+  text-align: left;
   width: 100%;
 }
 
-#hero p {
+.intro-home p {
   background-color: #ffffff;
   font-family: 'Poppins', sans-serif;
   font-size: 18px; /* Sets the font size to 16px */
@@ -430,27 +450,40 @@ p {
   line-height: 1.7; /* Sets the line-height to 1.6 * the font-size */
   color: #0b0b0b;
   padding-top: 0px;
-  padding-bottom: 30%;
+  padding-bottom: 10px;
   display: inline-block;
-  text-align: center;
+  text-align: left;
   width: 100%;
   }
 
-.contact-button-row {
+
+.home-button-row {
 display: flex;
 flex-direction: row;
 flex-wrap: wrap;
-justify-content: center;
-flex-basis: 50%;
+justify-content: left;
+margin:0px;
+padding-left: 0px;
   }
 
+
+.image-home {
+      width: 80%;
+      padding-bottom: 5%;
+      margin:0px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-content: flex-start;
+      align-items: flex-start;
+  }
 
 
   /* ==============================
       ABout Page
   ================================= */
 
-/********** Home Hero **********/
+
 
 
 
@@ -478,6 +511,7 @@ flex-basis: 50%;
     align-content: flex-start;
     align-items: flex-start;
 }
+
 
 
 .description {
