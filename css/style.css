@@ -6,6 +6,11 @@ Third Color (dark grey): #282828
 Highlight Color 2 (lightblue) #0057ff;
 */
 
+html{
+    scroll-behavior: smooth;
+}
+
+
 img {
   width: 100%;
 }
@@ -592,6 +597,14 @@ flex-wrap: wrap;
 justify-content: left;
 flex-basis: 50%;
   }
+
+  .contact-button-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-basis: 50%;
+    }
 
 
 
