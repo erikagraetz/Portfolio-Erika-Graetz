@@ -162,26 +162,6 @@ p {
 
   }
 
-
-  @keyframes flip-logo {
-  from {transform: rotate(0deg);}
-    to {transform: rotate(180deg);}
-
-    }
-
-
-.flip-logo-animation:hover {
-      transform:rotateX(180deg);
-        transition-duration: 0.5s;
-    }
-
-
-}
-
-
-
-
-
 /* hover links */
   a {
     color: #0b0b0b;
@@ -297,13 +277,16 @@ p {
          color: #0b0b0b;
          margin: 16px;
          text-decoration: none;
+         transition: transform 1s;
+         transform:rotateX(0deg);
          }
 
          .logo:hover {
            background-color: #ffffff;
            text-decoration: none;
            color: #0057ff;
-               }
+           transform:rotateX(180deg);
+         }
 
 
 
