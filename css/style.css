@@ -150,18 +150,6 @@ p {
       }
   }
 
-  .hero-image-animation:hover{
-      transform: translate(0, -5px);
-      transition: ease-in 0.5s;
-      transform: rotate(1deg);
-  }
-
-  .hero-image-animation {
-      transform: translate(0, -5px);
-      transition: ease-out 0.5s;
-
-  }
-
 /* hover links */
   a {
     color: #0b0b0b;
@@ -482,16 +470,23 @@ padding-left: 0px;
 
 
 .image-home {
-      width: 80%;
-      padding-bottom: 5%;
-      margin:0px;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-around;
-      align-content: flex-start;
-      align-items: flex-start;
-  }
+    width: 80%;
+    padding-bottom: 5%;
+    margin:0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: flex-start;
+    align-items: flex-start;
+    filter: grayscale(1);
+    transition: transform ease-in 0.5s, filter ease-in 0.5s;
+}
 
+.image-home:hover {
+  transform: translate(0, -5px);
+  transform: rotate(1deg);
+  filter: grayscale(0);
+}
 
   /* ==============================
       ABout Page
