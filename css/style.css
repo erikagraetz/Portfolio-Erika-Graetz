@@ -521,11 +521,9 @@ padding-left: 0px;
 .overview {
   display:flex;
   flex-direction: row;
-  flex-wrap: nowrap;
-  align-content: space-around;
   align-items: center;
-  justify-content: space-around;
-  padding: 2%;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .overview h2 {
@@ -534,28 +532,17 @@ text-align: left;
 
 
 .project-left-column {
-  display: flex;
-  flex-direction: column;
- flex-wrap: wrap;
-  max-width: 25%;
-  min-width: 15%;
+ max-width: 400px;
 
 }
 
 .project-right-column {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  max-width: 25%;
-  min-width:  15%;
+ max-width: 400px;
 
 }
 
 .middle-image {
-    display: flex;
-    flex-direction: column;
-    flex-basis: 30%;
-    flex-wrap: wrap;
+ max-width: 280px;
 }
 
 .design-process h2{
@@ -568,8 +555,11 @@ text-align: left;
 }
 
 .problem-solution-wrapper {
-  display: flex;
+  display:flex;
   flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content:flex-start;
 }
 
 
@@ -578,11 +568,11 @@ text-align: left;
   color: #0b0b0b;
   border-radius: 10px;
   margin: 1%;
-  width:30%;
-  min-width: 500px;
+  max-width: 450px;
+  max-height: 400px;
   -webkit-box-shadow: inset 1px 1px 8px 1px rgba(0,0,0,0.30);
   box-shadow: inset 1px 1px 8px 1px rgba(0,0,0,0.30);
-  min-height: 300px;
+
 
   }
 
@@ -591,17 +581,25 @@ text-align: left;
       margin-left: 24px;
       margin-right: 24px;
       margin-bottom: 24px;
-      min-height: 200px;
+      min-width: 350px;
+      max-height:400px;
   }
+
 
 .solution-content{
   margin-top: 24px;
   margin-left: 48px;
   margin-right: 24px;
   margin-bottom: 24px;
-  min-height: 200px;
+  min-height: 300px;
+  max-width: 800px;
 }
 
+.iteration-wrapper{
+display: flex;
+width: 100%;
+margin: 0px;
+}
 
 
 
@@ -785,7 +783,7 @@ justify-content: center;
   }
 
   .problem-box{
-      min-height: 200px;
+      min-height: 250px;
   }
 
 
@@ -813,7 +811,7 @@ max-width: 641px;
 }
 
 .problem-box {
-min-height: 220px;
+min-height: 250px;
 }
 
 

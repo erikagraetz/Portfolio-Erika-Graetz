@@ -23,18 +23,20 @@
 </head>
 
 <body>
-  <header class="container">
+  <header class= "container">
     <a href="index.html" class="logo flip-logo-animation" id="logo">erika.graetz</a>
-      <div class="navtoggle" id="myNavtoggle">
+        <div class="navtoggle" id="myNavtoggle">
     <nav>
       <ul class="navigation">
-          <li><a href="index.html">Work</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li><a href="javascript:void(0);" class="menuicon" onclick="menuToggle()">
-            <i class="fas fa-bars"></i></a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <!--Open hamburger menu-->
+      <li><a href="javascript:void(0);" class="menuicon" onclick="menuToggle()">
+        <i class="fas fa-bars"></i></a></li>
       </ul>
     </nav>
+    </div>
   </header>
 
 <main>
@@ -47,9 +49,9 @@
     </picture>
   </div>
   <!-- NOTE: End Hero image -->
-  <div>
+  <div class="container-project">
     <!-- NOTE: opening Project Overview -->
-    <div class="overview" class="container-project">
+    <div class="overview">
   <div class="project-left-column">
       <!-- NOTE: opening Left Column -->
       <h2>Objective</h2>
@@ -147,7 +149,6 @@
           </p>
         </div>
       </div> <!-- NOTE: closing Left Column -->
-
 
         <!-- NOTE: opening Right Column -->
     <div class="solution-content">
@@ -448,7 +449,7 @@
 
             <div>
               <!-- NOTE: opening Usability Test image -->
-              <picture>
+              <picture >
                 <source srcset="img/xpertease/Usability-testing@1x.jpg" media="(max-width:767px)">
                 <img src="img/xpertease/Usability-testing@2x.jpg" alt="Usability Test image">
               </picture>
@@ -468,10 +469,10 @@
             </p>
           </div>
   </div>
-          <div>
+          <div class="row">
             <!-- NOTE: opening Row 1 -->
 
-            <div>
+            <div  class="iteration-wrapper" id="iteration">
               <!-- NOTE: opening Left Column -->
               <div>
                 <!-- NOTE: opening Prototype iteration image 1 -->
@@ -480,7 +481,7 @@
                   <img src="img/xpertease/iterations/iterations-01@2x.jpg" alt="iteration 1 image">
                 </picture>
               </div> <!-- NOTE: closing Prototype iteration image 1  -->
-            </div> <!-- NOTE: closing Left Column -->
+
 
             <div>
               <!-- NOTE: opening Right Column -->
@@ -495,7 +496,7 @@
 
           </div> <!-- NOTE: closing Row 1 -->
 
-          <div>
+
             <!-- NOTE: opening Row 2 -->
 
             <div>
@@ -546,7 +547,7 @@
                 </picture>
               </div> <!-- NOTE: closing Prototype iteration image 6  -->
             </div> <!-- NOTE: closing Right Column -->
-
+</div>
           </div> <!-- NOTE: closing Row 3 -->
         </div> <!-- NOTE: closing Test Report & Prototype iterations section -->
 
