@@ -20,6 +20,8 @@ img {
 }
 
 
+
+
 .row {
   margin: 25px 0; /* 25px top and bottom, 0 left and right */
 }
@@ -426,6 +428,9 @@ p {
   padding: 0 15px;
 }
 
+
+
+
 /********** Home Hero **********/
 
 .hero-home{
@@ -509,6 +514,97 @@ padding-left: 0px;
   filter: grayscale(0);
 }
 
+/* ==============================
+      Xpertease Project
+================================= */
+
+.overview {
+  display:flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: space-around;
+  align-items: center;
+  justify-content: space-around;
+  padding: 2%;
+}
+
+.overview h2 {
+text-align: left;
+}
+
+
+.project-left-column {
+  display: flex;
+  flex-direction: column;
+ flex-wrap: wrap;
+  max-width: 25%;
+  min-width: 15%;
+
+}
+
+.project-right-column {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-width: 25%;
+  min-width:  15%;
+
+}
+
+.middle-image {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 30%;
+    flex-wrap: wrap;
+}
+
+.design-process h2{
+ text-align: left;
+}
+
+
+.container-project {
+  padding: 5%;
+}
+
+.problem-solution-wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+
+.problem-box {
+  background-color: white;
+  color: #0b0b0b;
+  border-radius: 10px;
+  margin: 1%;
+  width:30%;
+  min-width: 500px;
+  -webkit-box-shadow: inset 1px 1px 8px 1px rgba(0,0,0,0.30);
+  box-shadow: inset 1px 1px 8px 1px rgba(0,0,0,0.30);
+  min-height: 300px;
+
+  }
+
+  .problem-content{
+      margin-top: 36px;
+      margin-left: 24px;
+      margin-right: 24px;
+      margin-bottom: 24px;
+      min-height: 200px;
+  }
+
+.solution-content{
+  margin-top: 24px;
+  margin-left: 48px;
+  margin-right: 24px;
+  margin-bottom: 24px;
+  min-height: 200px;
+}
+
+
+
+
   /* ==============================
       ABout Page
   ================================= */
@@ -533,6 +629,7 @@ padding-left: 0px;
 
 .hero-image {
     width: 30%;
+    max-width: 30%;
     padding-bottom: 5%;
     margin-right:5%;
     display: flex;
@@ -687,6 +784,11 @@ justify-content: center;
     display: none;
   }
 
+  .problem-box{
+      min-height: 200px;
+  }
+
+
 }
 
 /* ==============================
@@ -710,13 +812,16 @@ max-width: 641px;
   display: inline-block;
 }
 
+.problem-box {
+min-height: 220px;
+}
 
 
 }
 
 
 
-
+/********** Media Queries **********/
 
 
   /* ==============================
@@ -767,7 +872,9 @@ max-width: 641px;
   display: inline-block;
 }
 
-
+* {
+    box-sizing: content-box;
+}
 
 
 }

@@ -25,15 +25,19 @@
 <body>
   <header class="container">
     <a href="index.html" class="logo flip-logo-animation" id="logo">erika.graetz</a>
+      <div class="navtoggle" id="myNavtoggle">
     <nav>
       <ul class="navigation">
           <li><a href="index.html">Work</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="#contact">Contact</a></li>
+          <li><a href="javascript:void(0);" class="menuicon" onclick="menuToggle()">
+            <i class="fas fa-bars"></i></a></li>
       </ul>
     </nav>
   </header>
 
+<main>
   <div id="hero">
 <div class="container">
     <!-- NOTE: opening Hero image -->
@@ -45,12 +49,11 @@
   <!-- NOTE: End Hero image -->
   <div>
     <!-- NOTE: opening Project Overview -->
-    <div id="overview">
-  <div class="container">
+    <div class="overview" class="container-project">
+  <div class="project-left-column">
       <!-- NOTE: opening Left Column -->
-      <div>
-        <h2>Objective</h2>
-        <div class="row">
+      <h2>Objective</h2>
+        <div>
         <p>
           Design an App that connects advice seekers with Experts in order to get help virtually in
           nearly any professional field.
@@ -64,17 +67,18 @@
           any professional field and schedule virtual appointments with them, in order to feel supported and
           easily find fast and accurate answers to their questions.
         </p>
-      </div>
+        </div>
     </div> <!-- NOTE: closing Left Column -->
 
     <!-- NOTE: opening Centered mobile image -->
+<div class= "middle-image">
     <picture>
       <source srcset="img/xpertease/overview-phone@1x.png" media="(max-width:767px)">
       <img src="img/xpertease/overview-phone@2x.png" alt="Overview App">
     </picture>
+  </div>
 
-    <div id="project">
-  <div class="container">
+  <div class="project-right-column">
       <!-- NOTE: opening Righ Column -->
       <div>
         <h2>Project</h2>
@@ -101,10 +105,12 @@
           Adobe XD, Balsamiq, Ideate, Miro, Usability Hub, Optimal Sort
         </p>
       </div>
+      </div>
+        </div>
     </div> <!-- NOTE: closing Right Column -->
 
-    <div id="design process">
-  <div class="container">
+    <div class="design-process">
+  <div class="container-project">
       <!-- NOTE: opening Design process Section -->
       <div>
         <h2>Design Process</h2>
@@ -114,22 +120,25 @@
           allowing me to improve the design through feedback and experimentation.
         </p>
       </div>
+      <br>
+      <br>
       <div>
         <!-- NOTE: opening Design process image -->
         <picture>
           <source srcset="img/xpertease/designprocess@1x.png" media="(max-width:767px)">
-          <img src="img/xpertease/designprocess@2x.png" alt="design process image">
+          <img src="img/xpertease/designprocess@2x.png"  class="container-project"alt="design process image">
         </picture>
       </div> <!-- NOTE: closing Design process image -->
     </div> <!-- NOTE: closing Design process Section -->
 
     <div id="understand">
-  <div class="container">
+  <div class="container-project">
       <!-- NOTE: opening Section "1.Understand" -->
       <h1>1. Understand</h1>
-    <div class="row">
+    <div class="problem-solution-wrapper">
         <!-- NOTE: opening Left Column -->
-        <div>
+        <div class="problem-box">
+            <div class="problem-content">
           <h2>Problem Statement</h2>
           <p>
             Users need a way to quickly connect with certified experts on any professional field,
@@ -139,9 +148,9 @@
         </div>
       </div> <!-- NOTE: closing Left Column -->
 
-      <div>
+
         <!-- NOTE: opening Right Column -->
-        <div>
+    <div class="solution-content">
           <h2>Solution</h2>
           <p>
             This app will allow users to quickly connect in their desired way with certified and trustworthy
@@ -150,11 +159,13 @@
             advisory and having the opportunity to favourite experts in order to solicit further help.
           </p>
         </div>
+          </div>
       </div> <!-- NOTE: closing Right Column -->
 
       <div>
         <!-- NOTE: opening Competitor Analysis Section -->
         <div id="competitor analysis">
+        <div class="container-project">
           <h2>Competitor Analysis</h2>
           <p>
             I proceeded making research to identify the already existing potential competitors in the market.
@@ -162,7 +173,7 @@
             features they offer. I chose two for further competitive anaylsis: MAGNIFI & JUSTANSWER
           </p>
         </div>
-        <div>
+        <div class="container-project">
           <!-- NOTE: opening competitor Analysis image -->
           <picture>
             <source srcset="img/xpertease/competitoranalysis@1x.jpg" media="(max-width:767px)">
@@ -170,7 +181,7 @@
           </picture>
         </div> <!-- NOTE: closing competitor Analysis image -->
 
-          <div id="conclusions">
+          <div id="conclusions"  class="container-project">
           <!-- NOTE: opening conclusions Section -->
           <h2>Conclusions</h2>
           <p>
@@ -181,7 +192,7 @@
           </p>
         </div> <!-- NOTE: closing conclusions Section -->
 
-        <div>
+        <div  class="container-project">
           <!-- NOTE: opening User Stories Section -->
           <div id="user stories">
             <h2>User Stories</h2>
@@ -190,7 +201,7 @@
               these better, I decided to simplify these down to small, readable executable parts by creating User Stories.
             </p>
           </div>
-          <div>
+          <div  class="container-project">
             <!-- NOTE: opening User Stories image -->
             <picture>
               <source srcset="img/xpertease/userstories@1x.jpg" media="(max-width:767px)">
@@ -201,7 +212,7 @@
 
       </div>
 
-        <div id="observe">   <!-- NOTE: opening 2. Observe section -->
+        <div id="observe"  class="container-project">   <!-- NOTE: opening 2. Observe section -->
       <h1>2. Observe</h1>
 
         <div class="row">
@@ -242,7 +253,7 @@
     </div> <!-- NOTE: closing User Interviews section -->
   </div> <!-- NOTE: closing 2.Observe section -->
 
-      <div id="pov">
+      <div id="pov"  class="container-project">
     <div class="container">  <!-- NOTE: opening 3.POV section -->
       <h1>3. POV</h1>
         <!-- NOTE: opening User Personas section -->
@@ -686,43 +697,34 @@
 
         </div> <!-- NOTE: closing NEXT STEPS section -->
 </div>
+</main>
 
-      <div id="footer">
-        <footer>
+  <!-- NOTE: opening Contact -->
+  <div class="getintouch" id="contact">
+    <!-- NOTE: opening Footer Section -->
+    <div class="container">
+      <h2>Get in Touch!</h2>
+      <div class="contact-button-row">
+      <!-- NOTE: Email "button" -->
+      <a href="mailto:erika.graetz@gmail.com" class="button contact">Send me an Email</a>
+    <div>
+      <!-- NOTE: Linkedin "button" -->
+      <a href="https://www.linkedin.com/in/erika-graetz/" target="_blank" class="button contact2">Connect in Linkedin</a>
+    </div>
+    <div>
+      <!-- NOTE: Behance "button" -->
+      <a href="https://www.behance.net/erika-graetz/" target="_blank" class="button contact2">Behance</a>
+    </div>
+  </div>
+  </div>
+<footer>
+<div class="container">
+  <h5>Copyright © Erika Graetz 2021</h5>
+</div>
+</footer>
 
-        <div class="container">
-            <!-- NOTE: opening Footer Section -->
-            <div class="getintouch">
-              <h2>Get in Touch!</h2>
-              <div class="contact-button-row">
-              <!-- NOTE: Email "button" -->
-              <a href="mailto:erika.graetz@gmail.com" class="button contact">Send me an Email</a>
-            <div>
-              <!-- NOTE: Linkedin "button" -->
-              <a href="https://www.linkedin.com/in/erika-graetz/" target="_blank" class="button contact2">Connect in Linkedin</a>
-            </div>
-          </div>
-            <div>
-              <a href="tel:+4915774772844">Give me a call!</a>
-            </div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
-            <div class="socialmedia">
-              <!--Social Media Layout and icons-->
-              <a href="https://www.linkedin.com/in/erika-graetz/" target="_blank">
-              <img src="img/icons/iconfinder_linkedin.png" alt="linkedin">
-              </a>
-              <a href="https://www.behance.net/erika-graetz/" target="_blank">
-                <img src="img/icons/iconfinder_behance.png" alt="behance">
-                </a>
-            </div>
-          </div>
-        <div class="container">
-          <p>Copyright Erika Graetz 2021</p>
-        </div>
-        </footer>
-
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-        
 <script src="js/scripts.js"> </script>
 </body>
 
