@@ -144,7 +144,6 @@ h5 {
 
 
 p {
-  background-color: #ffffff;
   font-family: 'Poppins', sans-serif;
   font-size: 16px; /* Sets the font size to 16px */
   font-weight: 300; /* Sets the font weight to 300 */
@@ -518,6 +517,13 @@ padding-left: 0px;
       Xpertease Project
 ================================= */
 
+#understand, #pov {
+  background-color: #f8f8f8;
+  padding-top: 2%;
+  padding-bottom: 3%;
+}
+
+
 .overview {
   display:flex;
   flex-direction: row;
@@ -551,7 +557,8 @@ text-align: left;
 
 
 .container-project {
-  padding: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
 .problem-solution-wrapper {
@@ -563,7 +570,7 @@ text-align: left;
 
 
 .problem-box {
-  background-color: white;
+  background-color: #f8f8f8;
   color: #0b0b0b;
   border-radius: 10px;
   margin: 1%;
@@ -593,10 +600,36 @@ text-align: left;
   max-width: 500px;
 }
 
-.iteration-wrapper{
-display: flex;
-width: 100%;
-margin: 0px;
+#conclusions,  {
+  background-color: #2E4B5F;
+  padding-top: 2%;
+  padding-bottom: 3%;
+  color: #ffffff;
+}
+
+#conclusions p {
+  color: #ffffff;
+  font-weight: 200;
+}
+
+#user-personas img {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+  min-height: 550px;
+}
+
+.iteration-wrapper {
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.iteration-images{
+  margin-right: 12px;
+  flex-basis: 45%;
+  padding-bottom: 5%;
 }
 
 
@@ -709,6 +742,7 @@ margin-left: 0px;
   justify-content: center;
   flex-basis: 50%;
     }
+
 
 
 
