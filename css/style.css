@@ -632,6 +632,20 @@ text-align: left;
   padding-bottom: 5%;
 }
 
+#refinedesign, #reflections {
+  background-color: #f8f8f8;
+  padding-top: 2%;
+  padding-bottom: 3%;
+}
+
+.prototype-button-row {
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: center;
+flex-basis: 50%;
+padding-bottom: 5%;
+  }
 
 
   /* ==============================
