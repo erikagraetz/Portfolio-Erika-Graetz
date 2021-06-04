@@ -601,8 +601,8 @@ text-align: left;
   max-width: 500px;
 }
 
-#conclusions,  {
-  background-color: #2E4B5F;
+#conclusions {
+  background-color:#2E4B5F;
   padding-top: 2%;
   padding-bottom: 3%;
   color: #ffffff;
