@@ -837,6 +837,9 @@ justify-content: center;
       min-height: 250px;
   }
 
+.iteration-wrapper {
+  flex-direction: column;
+}
 
 }
 
