@@ -52,6 +52,7 @@ nav {
 
   nav > ul {
     list-style-type: none;
+    text-align: right;
   }
 
 
@@ -85,7 +86,7 @@ text-decoration: underline; /* Underlining when hovering over a link */
 }
 
 
-.navtoggle li:not(:last-child) {
+.navtoggle li:not(:first-child) {
   display: none;
 }
 
@@ -824,9 +825,13 @@ justify-content: center;
   }
 
 
-.navtoggle li:not(:last-child) {
+.navtoggle li:not(:first-child) {
     display: none;
   }
+
+.navtoggle.responsive li {
+  display: block;
+}
 
   .problem-box{
       min-height: 250px;
@@ -848,11 +853,11 @@ justify-content: center;
 max-width: 641px;
 }
 
-.navtoggle li:last-child {
+.navtoggle li:first-child {
   display: none;
 }
 
-.navtoggle li:not(:last-child) {
+.navtoggle li:not(:first-child) {
   display: inline-block;
 }
 
@@ -881,11 +886,11 @@ min-height: 250px;
   max-width: 641px;
 }
 
-.navtoggle li:last-child {
+.navtoggle li:first-child {
   display: none;
 }
 
-.navtoggle li:not(:last-child) {
+.navtoggle li:not(:first-child) {
   display: inline-block;
 }
 
@@ -907,12 +912,12 @@ min-height: 250px;
 }
 
 
-.navtoggle li:last-child {
+.navtoggle li:first-child {
   display: none;
 }
 
 
-.navtoggle li:not(:last-child) {
+.navtoggle li:not(:first-child) {
   display: inline-block;
 }
 
