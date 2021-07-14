@@ -8,7 +8,7 @@
   <title>Erika Graetz – UX & UI Designer</title>
   <link href="img/about/favicon.png" rel="shortcut icon">
   <!-- NOTE: Fontawesome code for icons -->
-<script defer src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" integrity="sha384-haqrlim99xjfMxRP6EWtafs0sB1WKcMdynwZleuUSwJR0mDeRYbhtY+KPMr+JL6f" crossorigin="anonymous"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" integrity="sha384-haqrlim99xjfMxRP6EWtafs0sB1WKcMdynwZleuUSwJR0mDeRYbhtY+KPMr+JL6f" crossorigin="anonymous"></script>
 
   <!-- NOTE: normalize css -->
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
@@ -22,23 +22,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 </head>
+
 <body>
-  <header class= "container">
+  <header class="container">
     <a href="index.html" class="logo flip-logo-animation" id="logo">erika.graetz</a>
-        <div class="navtoggle" id="myNavtoggle">
-    <nav>
-      <ul class="navigation">
-         <!--Open hamburger menu-->
-        <li>
-          <a href="javascript:void(0);" class="menuicon" onclick="menuToggle()">
-            <i class="fas fa-bars"></i>
-          </a>
-        </li>
-        <li><a href="#work">Work</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
+    <div class="navtoggle" id="myNavtoggle">
+      <nav>
+        <ul class="navigation">
+          <!--Open hamburger menu-->
+          <li>
+            <a href="javascript:void(0);" class="menuicon" onclick="menuToggle()">
+              <i class="fas fa-bars"></i>
+            </a>
+          </li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
     </div>
   </header>
 
@@ -46,30 +47,30 @@
 
 
     <div class="hero-home">
-    <div class="container">
-      <!--Open row that holds 2 columns-->
-      <div class="intro-home">
-        <!--Open Column 1 -->
-        <h1>Hey! I’m Erika, a UX / UI & Graphic Designer based in Berlin.</h1>
-              <p>
-                My motivation is to meaningfully improve people’s lives by creating simple, pleasant and easy-to-use products.
-              </p>
-              <!-- NOTE: opening button Row -->
-    <div class="home-button-row">
-          <a href="#work" class="button contact">Check my work</a>
-            </div>
-              </div>
+      <div class="container">
+        <!--Open row that holds 2 columns-->
+        <div class="intro-home">
+          <!--Open Column 1 -->
+          <h1>Hey! I’m Erika, a UX / UI & Graphic Designer based in Berlin.</h1>
+          <p>
+            My motivation is to meaningfully improve people’s lives by creating simple, pleasant and easy-to-use products.
+          </p>
+          <!-- NOTE: opening button Row -->
+          <div class="home-button-row">
+            <a href="#work" class="button contact">Check my work</a>
+          </div>
+        </div>
       </div>
       <!--end intro-->
       <div class="hero-image hero-image-animation">
         <!--Open Column Right -->
         <picture>
           <source srcset="img/about/me-portrait@1x.jpg" media="(max-width:767px)">
-          <img srcset="img/about/me-portrait@2x.jpg" class="image-home" alt="Erika Graetz Portrait">
+          <img src="img/about/me-portrait@2x.jpg" class="image-home" alt="Erika Graetz Portrait">
         </picture>
       </div>
       <!--end pic-->
-      </div>
+    </div>
     <section class="work-wrapper" id="work">
       <!-- NOTE: opening of work section -->
       <div>
@@ -84,58 +85,60 @@
             <!-- NOTE: opening Project 1 Xpertease  -->
             <div>
               <a href="xpertease.html">
+              <picture>
                 <source srcset="img/xpertease/cover@1x.jpg" media="(max-width:767px)">
                 <img src="img/xpertease/cover@2x.jpg" class="round-borders" alt="Xpertease image">
+              </picture>
               </a>
             </div>
-          <div class="project-content">
-            <h3>Xpertease | UX Case Study)</h3>
-            <p>
-              A mobile App that allows users find Experts in nearly any professional field.
-            </p>
-            <div>
-              <a href="xpertease.html" class="button">Read more</a>
+            <div class="project-content">
+              <h3>Xpertease | UX Case Study)</h3>
+              <p>
+                A mobile App that allows users find Experts in nearly any professional field.
+              </p>
+              <div>
+                <a href="xpertease.html" class="button">Read more</a>
+              </div>
             </div>
-          </div>
-        </div><!-- NOTE: closing Project content -->
-      </div> <!-- NOTE: closing Project 1 Xpertease -->
-      <div class="project">
-        <!-- NOTE: opening Poject 2 Wordtray -->
-        <div class="white-background">
+          </div><!-- NOTE: closing Project content -->
+        </div> <!-- NOTE: closing Project 1 Xpertease -->
+        <div class="project">
+          <!-- NOTE: opening Poject 2 Wordtray -->
+          <div class="white-background">
             <picture>
-          <source srcset="http://via.placeholder.com/600x400" media="(max-width:767px)">
-          <img src="http://via.placeholder.com/800x600" class="round-borders" alt="Wordtray image">
-          </picture>
-          <div class="project-content">
-            <h3>Wordtray | UX Case Study)</h3>
-            <p>
-              A mobile App that helps people learn vocabulary anytime & anywhere.
-            </p>
-            <div>
-              <a href="lalala" class="button">Read more</a>
-            </div>
-          </div>
-        </div> <!-- NOTE: closing Project 2 Wordtray -->
-      </div>
-      <!-- NOTE: opening New Project ANIMATION -->
-      <div class="project">
-        <div class="white-background">
-            <picture>
-          <source srcset="http://via.placeholder.com/600x400" media="(max-width:767px)">
-          <img src="http://via.placeholder.com/800x600" class="round-borders" alt="Wordtray image">
-          </picture>
-          <div class="project-content">
-            <h3>Wordtray | UX Case Study)</h3>
-            <p>
-              A mobile App that helps people learn vocabulary anytime & anywhere.
-            </p>
-            <div>
-              <a href="lalala" class="button">Read more</a>
+              <source srcset="http://via.placeholder.com/600x400" media="(max-width:767px)">
+              <img src="http://via.placeholder.com/800x600" class="round-borders" alt="Wordtray image">
+            </picture>
+            <div class="project-content">
+              <h3>Wordtray | UX Case Study)</h3>
+              <p>
+                A mobile App that helps people learn vocabulary anytime & anywhere.
+              </p>
+              <div>
+                <a href="lalala" class="button">Read more</a>
+              </div>
             </div>
           </div> <!-- NOTE: closing Project 2 Wordtray -->
-            </div>
-            </div>
+        </div>
+        <!-- NOTE: opening New Project ANIMATION -->
+        <div class="project">
+          <div class="white-background">
+            <picture>
+              <source srcset="http://via.placeholder.com/600x400" media="(max-width:767px)">
+              <img src="http://via.placeholder.com/800x600" class="round-borders" alt="Wordtray image">
+            </picture>
+            <div class="project-content">
+              <h3>Wordtray | UX Case Study)</h3>
+              <p>
+                A mobile App that helps people learn vocabulary anytime & anywhere.
+              </p>
+              <div>
+                <a href="lalala" class="button">Read more</a>
               </div>
+            </div> <!-- NOTE: closing Project 2 Wordtray -->
+          </div>
+        </div>
+      </div>
     </section>
   </main>
 
@@ -163,8 +166,8 @@
       </div>
     </footer>
 
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-<script src="js/scripts.js"> </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="js/scripts.js"> </script>
 
   </div>
 </body>
